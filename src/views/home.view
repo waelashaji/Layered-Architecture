@@ -1,0 +1,16 @@
+<div>
+    <button @Click="getUsers()" id="users-button">Get Users</button>
+</div>
+
+<div bind="users, error">
+    <div :if="error" >Unauthorized</div>
+    <div :if="!error" >{{users}}</div>
+</div>
+
+<settings>
+    {
+    hasFooter: false,
+    hasHeader: false,
+    hasNav: false
+    }
+</settings>
